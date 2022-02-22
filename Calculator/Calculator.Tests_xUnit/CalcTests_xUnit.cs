@@ -36,9 +36,7 @@ namespace Calculator.Tests_xUnit
 
             var calc = new Calc();
 
-
-
-            calc.Sum(4, 3).Should().Be(7,"Ist nicht, weil isso");
+            calc.Sum(4, 3).Should().Be(7, "Ist nicht, weil isso");
             calc.Sum(4, 3).Should().BeGreaterThan(3);
             calc.Sum(4, 3).Should().BeInRange(3, 5000);
 
