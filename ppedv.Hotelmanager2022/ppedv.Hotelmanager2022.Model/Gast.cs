@@ -3,7 +3,7 @@
     public class Gast : Entity
     {
         public string Name { get; set; } = string.Empty;
-        public DateOnly GebDatum { get; set; }
+        public DateTime GebDatum { get; set; }
         public virtual ICollection<Buchung> Buchungen { get; set; } = new HashSet<Buchung>();
 
     }
