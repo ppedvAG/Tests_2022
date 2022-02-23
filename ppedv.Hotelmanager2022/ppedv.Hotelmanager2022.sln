@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Model", "ppedv.Hotelmanager2022.Model\ppedv.Hotelmanager2022.Model.csproj", "{0710033D-21AB-4A78-A6E1-E3A1D436BD19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Data.EFCore", "ppedv.Hotelmanager2022.Data.EFCore\ppedv.Hotelmanager2022.Data.EFCore.csproj", "{F0692E17-40F9-4F29-9B9A-733E16F3450E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0710033D-21AB-4A78-A6E1-E3A1D436BD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0710033D-21AB-4A78-A6E1-E3A1D436BD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0710033D-21AB-4A78-A6E1-E3A1D436BD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0710033D-21AB-4A78-A6E1-E3A1D436BD19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0692E17-40F9-4F29-9B9A-733E16F3450E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0692E17-40F9-4F29-9B9A-733E16F3450E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0692E17-40F9-4F29-9B9A-733E16F3450E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0692E17-40F9-4F29-9B9A-733E16F3450E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F39021A4-055B-4C6D-8CF9-93E7A1C11A9E}
+	EndGlobalSection
+EndGlobal
