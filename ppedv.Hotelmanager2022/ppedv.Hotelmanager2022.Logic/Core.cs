@@ -15,10 +15,10 @@ namespace ppedv.Hotelmanager2022.Logic
 
         public Buchung GetTeuersteBuchung()
         {
-            throw new NotImplementedException();
+            return Repository.Query<Buchung>().OrderByDescending(x => CalcBuchungsGesamtPreis(x)).ThenByDescending(x => x.Von).FirstOrDefault();
         }
 
-        public decimal CalcBuchungsGesamtPreis(Buchung buchung)
+        public virtual decimal CalcBuchungsGesamtPreis(Buchung buchung)
         {
             if (buchung == null)
                 throw new ArgumentNullException(nameof(buchung));
