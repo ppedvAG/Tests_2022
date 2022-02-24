@@ -1,10 +1,22 @@
 ﻿using ppedv.Hotelmanager2022.Model;
+using ppedv.Hotelmanager2022.Model.Contracts;
 
 namespace ppedv.Hotelmanager2022.Logic
 {
     public class Core
     {
 
+        public IRepository Repository { get; init; }
+
+        public Core(IRepository repository)
+        {
+            Repository = repository;
+        }
+
+        public Buchung GetTeuersteBuchung()
+        {
+            throw new NotImplementedException();
+        }
 
         public decimal CalcBuchungsGesamtPreis(Buchung buchung)
         {
@@ -21,10 +33,7 @@ namespace ppedv.Hotelmanager2022.Logic
 
         }
 
-        public Buchung GetTeuersteBuchung()
-        {
-            throw new NotImplementedException();
-        }
+
 
     }
 }

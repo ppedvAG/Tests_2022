@@ -104,13 +104,13 @@ namespace ppedv.Hotelmanager2022.Data.EFCore.Tests
 
 
                 //cleanup 
-                foreach (var b in loaded.Buchungen)
-                {
-                    con.Remove(b);
-                    con.Remove(b.Gast);
-                }
-                con.Remove(loaded);
-                con.SaveChanges();
+                //foreach (var b in loaded.Buchungen)
+                //{
+                //    con.Remove(b);
+                //    con.Remove(b.Gast);
+                //}
+                //con.Remove(loaded);
+                //con.SaveChanges();
             }
         }
 
