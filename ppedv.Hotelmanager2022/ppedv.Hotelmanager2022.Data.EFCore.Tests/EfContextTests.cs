@@ -15,7 +15,7 @@ namespace ppedv.Hotelmanager2022.Data.EFCore.Tests
         [Fact]
         public void Can_create_DB()
         {
-            using var con = new EfContext();
+            using var con = new EfContext("Server=(localdb)\\mssqllocaldb;Database=Hotelmanager2022_CreateDelete;Trusted_Connection=true;");
             con.Database.EnsureDeleted();
 
             var result = con.Database.EnsureCreated();
@@ -101,9 +101,32 @@ namespace ppedv.Hotelmanager2022.Data.EFCore.Tests
             {
                 var loaded = con.Raeume.Find(raum.Id);
                 loaded.Should().BeEquivalentTo(raum, c => c.IgnoringCyclicReferences());
-            }
 
+
+                //cleanup 
+                foreach (var b in loaded.Buchungen)
+                {
+                    con.Remove(b);
+                    con.Remove(b.Gast);
+                }
+                con.Remove(loaded);
+                con.SaveChanges();
+            }
         }
+
+
+        [Fact]
+        public void When_deleting_a_Raum_with_Buchungen_throw_exception()
+        {
+            throw new NotImplementedException();
+        }
+
+        [Fact]
+        public void When_deleting_a_Buchung_the_Raum_and_Gast_should_not_be_deleted()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 
     internal class PropertyNameOmitter : ISpecimenBuilder

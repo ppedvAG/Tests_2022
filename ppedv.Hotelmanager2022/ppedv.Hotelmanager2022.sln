@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Data.EFCore.Tests", "ppedv.Hotelmanager2022.Data.EFCore.Tests\ppedv.Hotelmanager2022.Data.EFCore.Tests.csproj", "{A20F2571-976D-4416-B3FE-13A359091EF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Logic", "ppedv.Hotelmanager2022.Logic\ppedv.Hotelmanager2022.Logic.csproj", "{D543D6A9-9A4A-40B8-B571-12636754EC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Hotelmanager2022.Logic.Tests", "ppedv.Hotelmanager2022.Logic.Tests\ppedv.Hotelmanager2022.Logic.Tests.csproj", "{97579B34-3E32-4DDE-92B7-1B7B99DD6FFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A20F2571-976D-4416-B3FE-13A359091EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20F2571-976D-4416-B3FE-13A359091EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20F2571-976D-4416-B3FE-13A359091EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D543D6A9-9A4A-40B8-B571-12636754EC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D543D6A9-9A4A-40B8-B571-12636754EC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D543D6A9-9A4A-40B8-B571-12636754EC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D543D6A9-9A4A-40B8-B571-12636754EC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97579B34-3E32-4DDE-92B7-1B7B99DD6FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97579B34-3E32-4DDE-92B7-1B7B99DD6FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97579B34-3E32-4DDE-92B7-1B7B99DD6FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97579B34-3E32-4DDE-92B7-1B7B99DD6FFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
